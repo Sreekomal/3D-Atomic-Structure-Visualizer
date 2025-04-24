@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Space Visualization</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/controls/OrbitControls.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+<header>
+    Quantum Space Visualization
+</header>
+
+<main>
+    <section id="simulation">
+        <h2>Quantum Simulation</h2>
+        <p>Enter values to see quantum numbers and electron configuration.</p>
+  
+        <label for="atomicNumber">Atomic Number (Z):</label>
+        <input type="number" id="atomicNumber" placeholder="Enter Atomic Number (Z)" min="1" />
+        <small>The number of protons in an atom (e.g., 1 for Hydrogen, 8 for Oxygen).</small>
+        <small>Try small atomic numbers(30-50) to understand better</small>
+  
+        <label for="ionCharge">Ion Charge:</label>
+        <input type="number" id="ionCharge" placeholder="Ion Charge" min="-20" max="20" />
+        <small>Charge of the ion. Positive for cations (+1, +2) and negative for anions (-1, -2).</small>
+  
+        <button id="calculateBtn">Calculate Quantum Numbers</button>
+      </section>
+  
+
+    <div class="container">
+        <div id="three-container"></div>
+
+        <div class="info-section">
+            <!-- Quantum Numbers Block -->
+            <div class="info-block">
+                <h3>Quantum Numbers</h3>
+                <p>Click on a quantum number to highlight the corresponding electron.</p>
+                <p id="quantumNumbers"></p>
+            </div>
+        
+            <!-- Electron Configuration Block -->
+            <div class="info-block">
+                <h3>Electron Configuration</h3>
+                <p id="configDisplay"></p>
+        
+                <!-- Buttons for Learning More About Quantum Numbers -->
+                <button onclick="openQuantumInfo('principal')">Know More About Principal (n)</button>
+                <button onclick="openQuantumInfo('azimuthal')">Know More About Azimuthal (l)</button>
+                <button onclick="openQuantumInfo('magnetic')">Know More About Magnetic (m)</button>
+                <button onclick="openQuantumInfo('spin')">Know More About Spin (s)</button>
+            </div>
+        </div>
+        
+    </div>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

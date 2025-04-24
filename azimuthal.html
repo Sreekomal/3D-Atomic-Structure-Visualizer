@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azimuthal Quantum Number (ℓ)</title>
+    <link rel="stylesheet" href="info-styles.css">
+</head>
+<body>
+
+<header>Azimuthal Quantum Number (ℓ)</header>
+
+<main>
+    <section class="content">
+        <h2>What is "ℓ"?</h2>
+        <p>The **azimuthal quantum number (ℓ)** determines the shape of an electron’s orbital.</p>
+
+        <h3>🔹 Orbital Types:</h3>
+        <ul>
+            <li>s-orbital (ℓ=0): **Spherical** 🌐</li>
+            <li>p-orbital (ℓ=1): **Dumbbell** 🥜</li>
+            <li>d-orbital (ℓ=2): **Double dumbbell** ✨</li>
+            <li>f-orbital (ℓ=3): **Complex multi-lobed** 🤯</li>
+        </ul>
+
+        <h3>Shape of the orbit: </h3>
+        <input type="text" id="orbitalInput" placeholder="Enter s, p, d, or f">
+        <button id="orbitSelectBtn">Show Orbital</button>
+    </section>
+</main>
+
+<label for="speedControl">Speed Control:</label>
+<input type="range" id="speedControl" min="0.005" max="0.1" step="0.005" value="0.02">
+<div id="three-container"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="azimuthalQuantum.js"></script>
+</body>
+</html>

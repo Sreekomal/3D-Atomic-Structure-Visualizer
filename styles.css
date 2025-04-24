@@ -1,0 +1,163 @@
+/* Basic reset & body styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0c0c0c;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center; /* Center headings & paragraphs */
+}
+
+/* Header */
+header {
+  background-color: #1a1a1a;
+  padding: 20px;
+  font-size: 24px;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+}
+
+/* Simulation (Input) Section */
+#simulation {
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+/* Labels & small descriptions */
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+small {
+  display: block;
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 10px;
+}
+
+/* Inputs & button */
+input, button {
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+input {
+  width: 80%;
+  max-width: 300px;
+  background: #333;
+  color: white;
+  text-align: center;
+}
+
+button {
+  background: #ff9800;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #e68900;
+}
+
+/* Container for 3D + Info Blocks */
+.container {
+  /* Center the container, column layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* center horizontally */
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+/* 3D Visualization */
+#three-container {
+  width: 100%;
+  height: 400px;
+  margin: 20px auto;
+  background-color: rgba(255,255,255,0.05);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+/* Info Section (Below 3D) */
+.info-section {
+  /* side-by-side layout for the two blocks */
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+/* Individual Info Blocks */
+.info-block {
+  flex: 1;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+  min-height: 200px;
+  max-height: 400px;
+  overflow-y: auto;
+  text-align: left; /* content left-aligned */
+}
+
+/* Headings inside info blocks */
+.info-block h3 {
+  margin-top: 0;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .info-section {
+    flex-direction: column; /* stack blocks vertically */
+  }
+}
+/* Highlight clicked quantum number */
+.quantum-number {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  transition: color 0.3s;
+}
+
+.quantum-number:hover {
+  color: #00ff99;
+}
+
+.selected {
+  color: yellow !important;
+  font-weight: bold;
+}
+#three-container {
+  width: 50%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px; /* Adjust spacing */
+}
+
+

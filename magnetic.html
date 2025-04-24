@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnetic Quantum Number (mₗ)</title>
+    <link rel="stylesheet" href="info-styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+    <header>Magnetic Quantum Number (mₗ) Visualization</header>
+
+    <main>
+        <section class="content">
+            <h2>What is mₗ?</h2>
+            <p>The <b>magnetic quantum number (mₗ)</b> determines the <b>orientation</b> of an orbital in space.</p>
+
+            <h3>🔹 Example:</h3>
+            <p>- For `l=1` (p-orbitals), possible values: `mₗ = -1, 0, +1`.</p>
+
+            <label for="lInput">Select Azimuthal Quantum Number (l):</label>
+            <select id="lInput">
+                <option value="0">s-orbital (l = 0)</option>
+                <option value="1">p-orbital (l = 1)</option>
+            </select>
+
+            <label for="mlInput">Select Magnetic Quantum Number (mₗ):</label>
+            <select id="mlInput"></select>
+
+            <button id="generateBtn">Generate</button>
+
+            <h3>🎨 3D Visualization:</h3>
+            <div id="three-container"></div>
+
+            <p id="mlValues"></p>
+        </section>
+    </main>
+
+    <script src="magnetic.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal Quantum Number (n)</title>
+    <link rel="stylesheet" href="info-styles.css">
+</head>
+<body>
+
+<header>Principal Quantum Number (n)</header>
+
+<main>
+    <section class="content">
+        <h2>What is "n"?</h2>
+        <p>The <strong>principal quantum number (n)</strong> determines the size and energy level of an electron shell.</p>
+        <p>Higher values of <code>n</code> mean <strong>larger orbitals</strong> and <strong>higher energy levels</strong>.</p>
+
+        <h3>🔹 Example:</h3>
+        <p>Think of <code>n</code> as <strong>floors in a building</strong>:  
+        - Ground floor (n=1) is closest to the nucleus.  
+        - Higher floors (n=2,3,...) have more energy and space!</p>
+    </section>
+    <section class="content">
+        <h3>🎨 Energy Level Representation:</h3>
+        <div class="input-container">
+            <input type="number" id="nInput" min="1" max="7" placeholder="Enter n (1-7)">
+            <button id="showElectronBtn">Show Electron</button>
+        </div>
+        <div id="three-container"></div>
+    </section>
+    
+</main>
+
+<!-- Three.js Container -->
+
+<!-- Three.js Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<!-- JS File -->
+<script src="principalQuantum.js"></script>
+
+</body>
+</html>
